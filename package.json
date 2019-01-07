@@ -1,0 +1,7 @@
+{
+  "name": "number-recorder-bot",
+  "private": true,
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
