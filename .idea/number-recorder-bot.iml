@@ -46,7 +46,7 @@
     <orderEntry type="library" scope="PROVIDED" name="bourbon (v5.1.0, rbenv: 2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.3, rbenv: 2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bullet (v5.9.0, rbenv: 2.5.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.17.3, rbenv: 2.5.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.15.2, rbenv: 2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler-audit (v0.6.0, rbenv: 2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="byebug (v10.0.2, rbenv: 2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capybara (v3.12.0, rbenv: 2.5.3) [gem]" level="application" />
