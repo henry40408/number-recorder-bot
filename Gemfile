@@ -62,3 +62,4 @@ gem 'bullet', group: [:development, :test]
 gem 'factory_bot_rails', group: [:development, :test]
 gem 'delayed_job_active_record'
 gem 'rack-timeout', group: :production
+gem 'telegram-bot'
