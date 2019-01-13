@@ -3,6 +3,10 @@ class TelegramWebhooksController < Telegram::Bot::UpdatesController
     text =<<EOT
 🔢 welcome to number recorder bot 🤖️
 give me a number to record
+
+/list: list numbers
+/timezone: get current timezone
+/timezone [time_zone]: set current timezone
 EOT
     respond_with :message, text: text
   end
