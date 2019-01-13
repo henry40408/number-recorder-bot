@@ -12,7 +12,7 @@ EOT
   end
 
   def list!(*)
-    numbers = current_user.recorded_numbers.limit(30)
+    numbers = current_user.latest_recorded_numbers.limit(limit)
     text = numbers
                .map{|n| "#{n.local_created_at}: #{n.number}"}
                .join("\n")
