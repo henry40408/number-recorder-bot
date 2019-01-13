@@ -12,10 +12,11 @@ EOT
   end
 
   def list!(*)
-    numbers = current_user.latest_recorded_numbers.limit(limit)
+    numbers = current_user.latest_recorded_numbers.limit(30)
     text = numbers
                .map{|n| "#{n.local_created_at}: #{n.number}"}
                .join("\n")
+    text = '(empty)' if text.blank?
     respond_with :message, text: text
   end
 
