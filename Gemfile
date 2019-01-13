@@ -8,14 +8,12 @@ end
 ruby "2.5.3"
 
 gem "autoprefixer-rails"
-gem "honeybadger"
 gem "pg"
 gem "puma"
 gem "rack-canonical-host"
 gem "rails", "~> 5.2.0"
 gem "recipient_interceptor"
 gem "sass-rails", "~> 5.0"
-gem "skylight"
 gem "sprockets", ">= 3.0.0"
 gem "title"
 gem "tzinfo-data", platforms: [:mingw, :x64_mingw, :mswin, :jruby]
