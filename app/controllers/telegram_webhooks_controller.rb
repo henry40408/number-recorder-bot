@@ -9,8 +9,23 @@ EOT
 
   def list!(*)
     numbers = current_user.recorded_numbers.limit(30)
-    text = numbers.map{|n| "#{n.created_at}: #{n.number}"}.join("\n")
+    text = numbers
+               .map{|n| "#{n.local_created_at}: #{n.number}"}
+               .join("\n")
     respond_with :message, text: text
+  end
+
+  def timezone!(timezone = nil, *)
+    if timezone.blank?
+      respond_with :message, text: current_user.timezone
+      return
+    end
+
+    u = current_user
+    u.timezone = timezone
+    u.save!
+
+    respond_with :message, text: "timezone has been set to #{u.timezone}"
   end
 
   def message(message)
